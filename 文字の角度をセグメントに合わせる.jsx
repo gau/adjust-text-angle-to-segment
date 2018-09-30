@@ -8,8 +8,8 @@
 	};
 
 	// Title and version
-	const SCRIPT_TITLE = 'セグメントと文字のの角度を揃える';
-	const SCRIPT_VERSION = '0.5.0';
+	const SCRIPT_TITLE = '文字の角度をセグメントに合わせる';
+	const SCRIPT_VERSION = '0.5.1';
 
 	// Document and selection
 	var doc = app.activeDocument;
@@ -166,34 +166,6 @@
 		} else {
 			return radian;
 		}
-	}
-
-	// --------------使用してない--------------
-
-	// Get the distance
-	function getDistance(p1, p2) {
-		return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
-	}
-
-	// Get the position from the angle and the distance
-	function getPosition(radian, distance, offsetPoint) {
-		return [
-			Math.cos(radian) * distance + offsetPoint.x,
-			Math.sin(radian) * distance + offsetPoint.y
-		];
-	}
-
-	// プロパティをalert表示
-	function alertP(obj) {
-		var str = '';
-		for(var key in obj) {
-			try {
-				str += '\n' + key + ' : ' + String(obj[key]);
-			} catch(e) {
-				str += '\n' + key + ' : --読み込み失敗--';
-			}
-		}
-		alert(str);
 	}
 
 }());
