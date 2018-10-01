@@ -21,7 +21,7 @@
 
 ### ダウンロード
 
-* [スクリプトをダウンロードする](https://github.com/gau/fit-text-angle-to-segment/archive/master.zip)
+* [スクリプトをダウンロードする](https://github.com/gau/adjust-text-angle-to-segment/archive/master.zip)
 
 ----
 
