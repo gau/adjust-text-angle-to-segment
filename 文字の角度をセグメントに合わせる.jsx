@@ -9,7 +9,7 @@
 
 	// Title and version
 	const SCRIPT_TITLE = '文字の角度をセグメントに合わせる';
-	const SCRIPT_VERSION = '0.5.1';
+	const SCRIPT_VERSION = '0.5.2';
 
 	// Document and selection
 	var doc = app.activeDocument;
@@ -17,7 +17,8 @@
 
 	// Get target items
 	var targetText = getTargetItems(sel, 'TextFrame');
-	var targetPoints = getTargetPoints(getTargetItems(sel, 'PathItem'));
+	var targetPathItems = getTargetItems(sel, 'PathItem');
+	var targetPoints = getTargetPoints(targetPathItems);
 	var effectiveSegment = targetPoints.length === 2;
 
 	// Confirm and execute
@@ -28,7 +29,7 @@
 		} else if(targetText.length < 1) {
 			alert('テキストオブジェクトが選択されていません\n少なくとも1つ以上の「ポイント文字」か「エリア内文字」を選択してください');
 			return;
-		} else if(!effectiveSegment) {
+		} else if(!effectiveSegment && targetPathItems.length > 0) {
 			if(!confirm('セグメントの選択が適切ではありません\nセグメントの角度に合わせて文字を回転するには、1セグメントのみを選択してください。このまま続けると選択した文字オブジェクトの回転をすべてリセットします。続行しますか？')) return;
 		}
 	}
