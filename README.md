@@ -16,7 +16,7 @@
 
 ### 対応バージョン
 
-* Illustrator CS5 〜 CC 2018（一部バージョンは未検証）
+* Illustrator CS5 〜 2020（一部バージョンは未検証）
 
 ----
 
@@ -124,14 +124,14 @@
 * グループ内のオブジェクトなどにも対応していますが、オブジェクトの構造（特に複雑なグループやマスク、複合パス、複合シェイプなど）によっては、期待する動作をしないこともあります。
 * 数値の演算で内部的にわずかな端数が残ってしまうことがあり、ごくまれに傾きをリセットしても完全な垂直／水平にならないことがあります。
 * このスクリプトを使って起こったいかなる現象についても制作者は責任を負えません。すべて自己責任にてお使いください。
-* Mac版のCS5とCC 2018で動作の確認はしましたが、OSのバージョンやその他の状況によって実行できないことがあるかもしれません。もし動かなかったらごめんなさい。
+* Mac版のCS5、CC 2018、2020で動作の確認はしましたが、OSのバージョンやその他の状況によって実行できないことがあるかもしれません。もし動かなかったらごめんなさい。
 
 ----
 
 ### ライセンス
 
 * 文字の角度をセグメントに合わせる.jsx
-* Copyright (c) 2018 Toshiyuki Takahashi
+* Copyright (c) 2018 - 2020 Toshiyuki Takahashi
 * Released under the MIT license
 * [http://opensource.org/licenses/mit-license.php](http://opensource.org/licenses/mit-license.php)
 * Created by Toshiyuki Takahashi ([Graphic Arts Unit](http://www.graphicartsunit.com/))
